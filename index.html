@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Oppidan</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+
+@keyframes panAnimation {
+      0% {
+        transform: translateX(0);
+      }
+      50% {
+        transform: translateX(100px); /* Adjust the distance you want the text to pan */
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
+
+    .panning-text {
+      display: inline-block;
+      font-size: 24px;
+      white-space: nowrap; /* Prevent text from wrapping */
+      overflow: hidden;
+      animation: panAnimation 4s forwards;
+    }
+
+    .d-flex-container {
+      display: flex;
+      justify-content: space-around; /* or space-between as per your preference */
+      align-items: center;
+      padding: 3rem;
+    }
+
+    .carousel-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 900px;
+      width: 900px;
+      border-color: rgb(0, 0, 0);
+      color: white;
+      font-family: 'Libre Baskerville';
+      text-align: center;
+      font-size: 30px;
+      height: 800px;
+    }
+
+   
+
+
+  body {
+      position: relative; 
+  }
+
+
+  .custom-paragraph {
+      font-size: 18px;
+      line-height: 1.2;
+      line-break: auto;
+      color: black;
+      font-family: Britanie;
+      position: absolute;
+      top: 160px; /* Adjust this value based on your preference */
+      right: 100px; /* Adjust this value based on your preference */
+    }
+
+    #section4 {
+      position: relative; /* Add this line to make the positioning of child elements relative to this container */
+    }
+  .two{
+    height: 120vh
+  }
+  .bottom-right {
+    position: absolute;
+    top: 180px;
+    left: 45px;
+    width: 45%;
+    font-size: 30px;
+    
+}
+
+.img-pop:hover {
+            transform: scale(1.03);
+            transition: transform 0.3s ease-in-out;
+        }
+
+
+
+
+
+  </style>
+</head>
+<body  data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50" style="background-color: #1E1E1E;">
+<nav class="navbar navbar-expand-sm navbar-dark fixed-top container-fluid " style="opacity: 0.9; background-color: #19282B;">
+  <div class="container"> <img src="./pictures/ru-logo.png" alt="Rhodes University" width="36%"> </div>
+  <div class="container-fluid">
+    <ul class="navbar-nav ">
+      <li class="nav-item">
+        <a class="nav-link" href="#section1">Home</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#section2">About Us</a>
+      </li>
+
+
+      <li class="nav-item">
+        <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#section3" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Oppi Guides
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                <li><a class="dropdown-item" href="https://drive.google.com/file/d/1m-2BCyS9PFJsOWSGNjGoXC0k6BEwfFS1/view"">Accredited Accomodation</a></li>
+                <li><a class="dropdown-item" href="#">Legal Address</a></li>
+                <li><a class="dropdown-item" href="./FAQ.html">FAQ</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+
+      </li>
+
+
+      <li class="nav-item">
+        <a class="nav-link" href="#section4">Hall Minutes</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#section5">Portfolios</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#section6">Events/coming Soon</a>
+      </li>
+
+    </ul>
+  </div>
+</nav>
+
+<div id="section1" class="sec" style="height: fit-content; position: -webkit-sticky; ">
+  
+  <div ><img class="img-fluid" src=".\pictures\main.svg" style="object-fit: cover; float: none ; width: 100%;"> </div>
+  
+</div> 
+
+
+<div id="section2"  class="two" style="position: relative; background-color: #1E1E1E;">
+  <div class="d-flex-container text-white container-fluid">
+    <div class="carousel-container" style="overflow-y: auto;">
+      
+      <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner" style="height: fit-content;">
+    
+            <div class="carousel-item active container">
+              <div class="flex-items">
+                <!-- First person -->
+                    <p>The Oppidan community is the single largest student body per hall at Rhodes University. The Hall Boasts approximately 3500 students out of a total student body of approximately 8100 students.Oppidans enjoy the benefits of increased independence and freedom from some of the structures of life in residence, but off-campus living also provides its challenges and unique experiences.
+
+                      Please remember however that all students are bound by the same student disciplinary code whether you are in residence or living in digs. This site is here to assist Oppidans, present and future, in overcoming challenges and in maximising the benefits of your living and learning journey at Rhodes University.</p>
+                  
+              </div>
+            </div>
+      
+            <div class="carousel-item" style="position: sticky; height: fit-content;">
+              <div class="flex-items">
+                <!-- Second person -->
+                    <h1 style="padding-bottom: 20px;"> What is the Oppidan Union? </h1>
+                    <p>The Oppidan Community is the single largest student body at Rhodes.  Oppis enjoy the benefits of increased independence and freedom from somr of the structures of life in residence, but off-campus living also provides its own challenges.  Thus the Oppidan Union was formed to help our Oppi's face all these challenges.    The Oppidan Union consists of the Wardens, Sub Wardens and House Committee to help with all your needs.</p>
+
+              </div>
+            </div>
+
+
+            <div class="carousel-item">
+              <div class="flex-items">
+                <!-- Second person -->
+                    <h1 style="padding-bottom: 20px;">The Oppidan Sub-wardens and what do they do?</h1>
+                    <p>Oppidan Sub-wardens help the Hall Warden to effectively run the Oppidan Union, and to provide a high-quality support service to student.  They are pro-actively involved with the Oppidan students and interested in all aspects of their lives-academic,sport, social and personal.  In particular Sub-wardens are there to offer support and advice to new and current Oppidans who are settling into digs life and to offer guidance and direction during times of crises.</p>
+
+              </div>
+            </div>
+
+
+
+
+            <div class="carousel-item">
+              <div class="flex-items">
+                <!-- Second person -->
+                    <h1 style="padding-bottom: 20px;" >What is the Oppidan Committee?</h1>
+                    <p>The Oppidan Committee is comprised of Oppidans students selected by fellow students to serve in the portfolioe. Their mandate is to look after the interests of all students living off-campus and they achieve this by maintaining channels of communication between Rhodes and Oppidans.  They are also resposible for organising events and functions to get the Oppidans together and interacting.</p>
+
+              </div>
+            </div>
+
+          </div>
+      </div>
+    </div>
+    <div style="width: 100px;"></div>
+    <div class="carousel-container">
+      <img class="img-fluid" src=".\pictures\opp221.jpg" style="object-fit: cover; float: none ; width: 100%;z-index: 100; height: 100%;"> 
+    </div>
+
+</div>
+
+
+<div id="section3" class="sec" style="background-color: #1E1E1E ; margin-top: 50px; height: fit-content;" > <!-- Illustration of the dropdown button Oppi Guides with its items in the form of a slideshow  -->
+  
+
+  <div id="carouselExampleCaptions" class="carousel d-flex    carousel-dark slide " data-bs-ride="carousel"   > 
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+
+
+    <div class="carousel-inner d-flex" style="height: 75vh; " >
+      
+      <div class="carousel-item active  " style="height: fit-content; ">
+        <table> 
+            <tr>
+              <td> <img src=".\pictures\law.svg"  class="img-fluid" alt="..."> </td> 
+
+              <td>
+                
+                <a href="https://drive.google.com/file/d/1m-2BCyS9PFJsOWSGNjGoXC0k6BEwfFS1/view"> <img src=".\pictures\rental.svg"   class="img-pop img-fluid" alt="..." style="cursor: pointer;">  </a>
+              
+              </td>
+            </tr>
+        </table>
+
+      </div>
+
+
+      <div class="carousel-item active  " style="height: fit-content; ">
+        <table> 
+            <tr>
+              <td> 
+                <a href="./FAQ.html"> <img src=".\pictures\FAQ.svg"  class="img-pop img-fluid" alt="..." style="cursor: pointer;">  </a>
+              </td> 
+
+              <td>
+                
+                <img src=".\pictures\OppiBus.svg"  class="img-fluid"  alt="...">  
+              
+              </td>
+            </tr>
+        </table>
+
+      </div>
+
+      <div class="carousel-item active  " style="height: fit-content; ">
+        <table> 
+            <tr>
+              <td> <img src=".\pictures\LifeOppidan.svg"  class="img-fluid" alt="..."> </td> 
+              <td><img src=".\pictures\Emergencies.svg"  class="img-fluid" alt="..."> </td>
+            </tr>
+        </table>
+
+      </div>
+
+    </div>
+
+   
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev" style="width: fit-content; height:fit-content; opacity: 0.5;">
+      <span class="carousel-control-prev-icon " aria-hidden="true" ></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next" style="height:fit-content; width: fit-content; opacity: 0.5;">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    </button>
+  </div>
+  
+
+</div>
+
+<div id="section4" class="sec" style="height: fit-content; position: -webkit-sticky; ">
+  
+  <div ><img class="img-fluid" src=".\pictures\minutes.png" style="object-fit: cover; float: none ; width: 100%;">   
+    <p class="custom-paragraph" style="margin-top: -100;" >
+      <!-- <a href="./index.html"> <img class="img-fluid" src=".\pictures\press.png" style="object-fit: cover; float: none ; width: 100%; cursor: pointer; "> </a>  -->
+ 
+    </p> 
+
+  </div>
+  
+
+
+  
+</div> 
+
+
+
+   
+
+<div id="section5" class="sec" style="height: fit-content;">
+  <div id="carouselExampleCaptions2" class="carousel d-flex    carousel-dark slide " data-bs-ride="carousel"   > 
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+
+
+    <div class="carousel-inner d-flex" style="height: fit-content;" >
+      
+      <div class="carousel-item active  " style="height: fit-content; ">
+        <table> 
+            <tr>
+              <td>
+                
+                <a href="#"> <img src=".\pictures\Portfolio.png"   class="img-pop img-fluid" alt="..." style="cursor: pointer;">  </a>
+              
+              </td> 
+
+              <td>
+                
+                <a href="#"> <img src=".\pictures\Portfolio2.png"   class="img-pop img-fluid" alt="..." style="cursor: pointer;">  </a>
+              
+              </td>
+            </tr>
+        </table>
+
+      </div>
+
+
+      <div class="carousel-item active  " style="height: fit-content; ">
+        <table> 
+            <tr>
+              <td>
+                
+                <a href="#"> <img src=".\pictures\Portfolio.png"   class="img-pop img-fluid" alt="..." style="cursor: pointer;">  </a>
+              
+              </td> 
+
+              <td>
+                
+                <a href="#"> <img src=".\pictures\Portfolio2.png"   class="img-pop img-fluid" alt="..." style="cursor: pointer;">  </a>
+              
+              </td>
+            </tr>
+        </table>
+
+      </div>
+
+    </div>
+
+   
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide="prev" style="width: fit-content; height:fit-content; opacity: 0.5;">
+      <span class="carousel-control-prev-icon " aria-hidden="true" ></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide="next" style="height:fit-content; width: fit-content; opacity: 0.5;">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    </button>
+  </div>
+
+</div>
+
+<div id="section6" class="sec" style="background-color: #1E1E1E ;height: fit-content;" > <!-- Illustration of the dropdown button Oppi Guides with its items in the form of a slideshow  -->
+  
+
+  <div id="carouselExampleCaptions" class="carousel d-flex    carousel-dark slide " data-bs-ride="carousel"   > 
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+
+
+    <div class="carousel-inner d-flex" style="height: 75vh; " >
+      
+      <div class="carousel-item active  " style="height: fit-content; ">
+        <table> 
+            <tr>
+              <td> 
+                
+                <a href=""> <img src=".\pictures\construction.svg"   class="img-pop img-fluid" alt="..." style="cursor: pointer;">  </a>
+              
+              </td> 
+
+              <td>
+                
+                <a href=""> <img src=".\pictures\events.svg"   class="img-pop img-fluid" alt="..." style="cursor: pointer;">  </a>
+              
+              </td>
+            </tr>
+        </table>
+
+      </div>
+
+
+
+  </div>
+  
+
+</div>
+
+     
+
+</div>
+
+
+
+<div class="p-5 bg-dark text-white text-center d-flex-container text-white container-fluid" style="bottom: 0; padding-top: 400px; opacity:0.7;">
+  
+  <table class="container" style="text-align: left;">
+    <tr>
+      <th><img src=".\pictures\ru-logo.png"> </th>
+    </tr>
+    <tr>
+      <td>PO Box 94</td>
+    </tr>
+    <tr>
+      <td>Makhanda 6140</td>
+    </tr>
+    <tr>
+      <td>email Communications</td>
+    </tr>
+
+    <!-- Add more rows for the other elements -->
+  </table>
+
+  <table class="container" style="text-align: left;">
+    <tr>
+      <th>Our Campus</th>
+    </tr>
+    <tr>
+      <td>Student Affairs</td>
+    </tr>
+    <tr>
+      <td>Infrastructure & Operations</td>
+    </tr>
+    <tr>
+      <td>Campus Safety</td>
+    </tr>
+    <tr>
+      <td>Office of the Vice Chancellor</td>
+    </tr>
+    <tr>
+      <td>Facility Services</td>
+    </tr>
+    <tr>
+      <td>Human Resources</td>
+    </tr>
+    <tr>
+      <td>Online Store</td>
+    </tr>
+    <!-- Add more rows for the other elements -->
+  </table>
+
+  <table class="container" style="text-align: left;">
+    <tr>
+      <th>Student Services</th>
+    </tr>
+    <tr>
+      <td>ROSS</td>
+    </tr>
+    <tr>
+      <td>Halls & Residences</td>
+    </tr>
+    <tr>
+      <td>Postgrad Gateway</td>
+    </tr>
+    <tr>
+      <td>Information Technologies</td>
+    </tr>
+    <tr>
+      <td>Student Life</td>
+    </tr>
+
+    <!-- Add more rows for the other elements -->
+  </table>
+
+  <table class="container" style="text-align: left;">
+    <tr>
+      <th>Student Services</th>
+    </tr>
+    <tr>
+      <td>ROSS</td>
+    </tr>
+    <tr>
+      <td>Halls & Residences</td>
+    </tr>
+    <tr>
+      <td>Postgrad Gateway</td>
+    </tr>
+    <tr>
+      <td>Information Technologies</td>
+    </tr>
+    <tr>
+      <td>Student Life</td>
+    </tr>
+
+    <!-- Add more rows for the other elements -->
+  </table>
+
+  <table class="container" style="text-align: left;">
+    <tr>
+      <th>>Academics</th>
+    </tr>
+    <tr>
+      <td>Research</td>
+    </tr>
+    <tr>
+      <td>Faculties and Departments</td>
+    </tr>
+    <tr>
+      <td>Library</td>
+    </tr>
+    <tr>
+      <td>Timetable</td>
+    </tr>
+    <tr>
+      <td>Apply For Admissions</td>
+    </tr>
+    <tr>
+      <td>Vacancies</td>
+    </tr>
+
+    <!-- Add more rows for the other elements -->
+  </table>
+
+</div>
+
+
+</body>
+</html>

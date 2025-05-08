@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Libre Baskerville' rel='stylesheet'>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    @keyframes panAnimation {
+      0% {
+        transform: translateX(0);
+      }
+      50% {
+        transform: translateX(100px); /* Adjust the distance you want the text to pan */
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
+
+    .panning-text {
+      display: inline-block;
+      font-size: 24px;
+      white-space: nowrap; /* Prevent text from wrapping */
+      overflow: hidden;
+      animation: panAnimation 4s forwards;
+    }
+
+    .d-flex-container {
+      display: flex;
+      justify-content: space-around; /* or space-between as per your preference */
+      align-items: center;
+      padding: 3rem;
+    }
+
+    .carousel-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 900px;
+      width: 900px;
+      border-style: solid;
+      border-color: rgb(0, 0, 0);
+      background-color: #E8D1AE;
+      color: #222344;
+      font-family: 'Libre Baskerville';
+      text-align: center;
+      font-size: 24px;
+      height: 800px;
+    }
+  </style>
+</head>
+<body style="background-color: #1E1E1E;">
+ 
+  <div class="d-flex-container text-white container-fluid">
+    <div class="carousel-container" style="overflow-y: auto;">
+      
+      <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner" style="height: fit-content;">
+    
+            <div class="carousel-item active container">
+              <div class="flex-items">
+                <!-- First person -->
+                    <p>The Oppidan community is the single largest student body per hall at Rhodes University. The Hall Boasts approximately 3500 students out of a total student body of approximately 8100 students.Oppidans enjoy the benefits of increased independence and freedom from some of the structures of life in residence, but off-campus living also provides its challenges and unique experiences.
+
+                      Please remember however that all students are bound by the same student disciplinary code whether you are in residence or living in digs. This site is here to assist Oppidans, present and future, in overcoming challenges and in maximising the benefits of your living and learning journey at Rhodes University.</p>
+                  
+              </div>
+            </div>
+      
+            <div class="carousel-item" style="position: sticky; height: fit-content;">
+              <div class="flex-items">
+                <!-- Second person -->
+                    <h1 style="padding-bottom: 20px;"> What is the Oppidan Union? </h1>
+                    <p>The Oppidan Community is the single largest student body at Rhodes.  Oppis enjoy the benefits of increased independence and freedom from somr of the structures of life in residence, but off-campus living also provides its own challenges.  Thus the Oppidan Union was formed to help our Oppi's face all these challenges.    The Oppidan Union consists of the Wardens, Sub Wardens and House Committee to help with all your needs.</p>
+
+              </div>
+            </div>
+
+
+            <div class="carousel-item">
+              <div class="flex-items">
+                <!-- Second person -->
+                    <h1 style="padding-bottom: 20px;">The Oppidan Sub-wardens and what do they do?</h1>
+                    <p>Oppidan Sub-wardens help the Hall Warden to effectively run the Oppidan Union, and to provide a high-quality support service to student.  They are pro-actively involved with the Oppidan students and interested in all aspects of their lives-academic,sport, social and personal.  In particular Sub-wardens are there to offer support and advice to new and current Oppidans who are settling into digs life and to offer guidance and direction during times of crises.</p>
+
+              </div>
+            </div>
+
+
+
+
+            <div class="carousel-item">
+              <div class="flex-items">
+                <!-- Second person -->
+                    <h1 style="padding-bottom: 20px;" >What is the Oppidan Committee?</h1>
+                    <p>The Oppidan Committee is comprised of Oppidans students selected by fellow students to serve in the portfolioe. Their mandate is to look after the interests of all students living off-campus and they achieve this by maintaining channels of communication between Rhodes and Oppidans.  They are also resposible for organising events and functions to get the Oppidans together and interacting.</p>
+
+              </div>
+            </div>
+
+          </div>
+      </div>
+    </div>
+    <div style="width: 100px;"></div>
+    <div class="carousel-container">
+      <img class="img-fluid" src=".\pictures\opp221.jpg" style="object-fit: cover; float: none ; width: 100%;z-index: 100; height: 100%;"> 
+    </div>
+</div>
+</body>
+</html>
